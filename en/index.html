@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Shop My Finds — @findwomenswear</title>
+  <meta name="description" content="Shop the looks from @findwomenswear on TikTok. Amazon swimwear & fashion finds.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f4f4f4;
+      color: #111;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #fff;
+      padding: 18px 16px 14px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .handle { font-size: 12px; color: #999; margin-bottom: 3px; }
+    .brand  { font-size: 20px; font-weight: 800; color: #111; }
+    .tagline { font-size: 12px; color: #777; margin-top: 3px; }
+
+    main {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* ── Hero card ─────────────────────────────── */
+    .hero {
+      display: block;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+      text-decoration: none;
+      color: inherit;
+    }
+    .hero-badge {
+      background: #FF0050;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      padding: 7px 14px;
+      display: block;
+    }
+    .hero-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-placeholder {
+      width: 100%; height: 300px;
+      background: linear-gradient(135deg, #f9e4e9, #fce4ec);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 64px;
+    }
+    .hero-body { padding: 16px; }
+    .hero-title {
+      font-size: 15px; font-weight: 600; line-height: 1.45;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .hero-price { font-size: 22px; font-weight: 800; color: #FF0050; margin-bottom: 14px; }
+    .btn-primary {
+      display: block; background: #FF0050; color: #fff;
+      font-size: 15px; font-weight: 700; padding: 14px;
+      border-radius: 10px; text-align: center; text-decoration: none;
+    }
+
+    /* ── Grid ──────────────────────────────────── */
+    .section-label {
+      font-size: 12px; font-weight: 700; color: #aaa;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .card {
+      display: block; background: #fff;
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+      text-decoration: none; color: inherit;
+    }
+    .card-img {
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; display: block;
+    }
+    .card-placeholder {
+      width: 100%; aspect-ratio: 3/4;
+      background: linear-gradient(135deg, #f9e4e9, #fce4ec);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+    }
+    .card-body { padding: 10px; }
+    .card-title {
+      font-size: 12px; font-weight: 500; line-height: 1.4;
+      color: #333; margin-bottom: 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-price { font-size: 14px; font-weight: 800; color: #FF0050; margin-bottom: 8px; }
+    .btn-card {
+      display: block; background: #111; color: #fff;
+      font-size: 11px; font-weight: 700; padding: 7px;
+      border-radius: 6px; text-align: center;
+    }
+
+    /* ── States ────────────────────────────────── */
+    .state {
+      text-align: center; padding: 64px 20px; color: #bbb;
+    }
+    .state .icon { font-size: 52px; margin-bottom: 14px; }
+    .state p { font-size: 14px; line-height: 1.6; }
+
+    footer {
+      text-align: center; padding: 32px 16px 48px;
+      color: #ccc; font-size: 11px; line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="handle">@findwomenswear on TikTok</div>
+  <div class="brand">🛍️ Shop My Finds</div>
+  <div class="tagline">Amazon swimwear &amp; fashion picks</div>
+</header>
+
+<main id="app">
+  <div class="state"><div class="icon">👙</div><p>Loading...</p></div>
+</main>
+
+<footer>
+  Links are affiliate links. As an Amazon Associate I earn from qualifying purchases.
+</footer>
+
+<script>
+  function clean(raw) {
+    const el = document.createElement('textarea');
+    el.innerHTML = raw || '';
+    return el.value;
+  }
+
+  function img(url, imgCls, phCls, emoji) {
+    if (url) {
+      return `<img class="${imgCls}" src="${url}" alt="" loading="lazy"
+        onerror="this.outerHTML='<div class=\\"${phCls}\\">${emoji}</div>'">`;
+    }
+    return `<div class="${phCls}">${emoji}</div>`;
+  }
+
+  function hero(p) {
+    const t = clean(p.title);
+    return `
+      <a class="hero" href="${p.affiliate_url}" target="_blank" rel="noopener sponsored">
+        <span class="hero-badge">🆕 JUST POSTED</span>
+        ${img(p.image_url, 'hero-img', 'hero-placeholder', '👙')}
+        <div class="hero-body">
+          <div class="hero-title">${t}</div>
+          <div class="hero-price">Only $${Number(p.price).toFixed(2)}</div>
+          <div class="btn-primary">Shop Now →</div>
+        </div>
+      </a>`;
+  }
+
+  function card(p) {
+    const t = clean(p.title);
+    return `
+      <a class="card" href="${p.affiliate_url}" target="_blank" rel="noopener sponsored">
+        ${img(p.image_url, 'card-img', 'card-placeholder', '👙')}
+        <div class="card-body">
+          <div class="card-title">${t}</div>
+          <div class="card-price">$${Number(p.price).toFixed(2)}</div>
+          <div class="btn-card">Shop Now</div>
+        </div>
+      </a>`;
+  }
+
+  async function init() {
+    const app = document.getElementById('app');
+    try {
+      const r = await fetch('./posts.json?t=' + Date.now());
+      const posts = await r.json();
+
+      if (!posts.length) {
+        app.innerHTML = `<div class="state"><div class="icon">👙</div>
+          <p>New finds coming soon!<br>Follow <strong>@findwomenswear</strong> on TikTok.</p></div>`;
+        return;
+      }
+
+      const [first, ...rest] = posts;
+      let html = hero(first);
+      if (rest.length) {
+        html += `<div class="section-label">More Finds</div>`;
+        html += `<div class="grid">${rest.map(card).join('')}</div>`;
+      }
+      app.innerHTML = html;
+    } catch {
+      app.innerHTML = `<div class="state"><div class="icon">👙</div>
+        <p>Follow <strong>@findwomenswear</strong> on TikTok for the latest finds!</p></div>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
