@@ -158,10 +158,16 @@
     return el.value;
   }
 
+  function imgErr(el, cls, emoji) {
+    const d = document.createElement('div');
+    d.className = cls;
+    d.textContent = emoji;
+    el.replaceWith(d);
+  }
+
   function img(url, imgCls, phCls, emoji) {
     if (url) {
-      return `<img class="${imgCls}" src="${url}" alt="" loading="lazy"
-        onerror="this.outerHTML='<div class=\\"${phCls}\\">${emoji}</div>'">`;
+      return `<img class="${imgCls}" src="${url}" alt="" loading="lazy" onerror="imgErr(this,'${phCls}','${emoji}')">`;
     }
     return `<div class="${phCls}">${emoji}</div>`;
   }
