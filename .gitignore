@@ -1,0 +1,11 @@
+.env
+assets/
+output/
+products/
+backlog.json
+characters/rotation_log.json
+__pycache__/
+*.pyc
+node_modules/
+logs/
+.pytest_cache/

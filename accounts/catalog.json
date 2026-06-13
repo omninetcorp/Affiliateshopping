@@ -1,0 +1,34 @@
+{
+  "accounts": [
+    {
+      "id": "womenswear-01",
+      "niche_id": "womens-fashion",
+      "tiktok_username": "findwomenswear",
+      "established": false,
+      "daily_post_limit": 2,
+      "preferred_post_times": ["09:00", "18:00"],
+      "proxy": null,
+      "credentials_env_suffix": "WOMENSWEAR_01"
+    },
+    {
+      "id": "kitchen-01",
+      "niche_id": "kitchen-gadgets",
+      "tiktok_username": "YOUR_KITCHEN_ACCOUNT",
+      "established": false,
+      "daily_post_limit": 2,
+      "preferred_post_times": ["11:00", "19:00"],
+      "proxy": null,
+      "credentials_env_suffix": "KITCHEN_01"
+    },
+    {
+      "id": "beauty-01",
+      "niche_id": "beauty-tools",
+      "tiktok_username": "YOUR_BEAUTY_ACCOUNT",
+      "established": false,
+      "daily_post_limit": 2,
+      "preferred_post_times": ["08:00", "20:00"],
+      "proxy": null,
+      "credentials_env_suffix": "BEAUTY_01"
+    }
+  ]
+}

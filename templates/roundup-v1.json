@@ -1,0 +1,42 @@
+{
+  "template_id": "roundup-v1",
+  "format": "roundup",
+  "max_products": 5,
+  "slides_per_product": 2,
+  "slides": [
+    {
+      "index": 1,
+      "role": "hook-title",
+      "generation": "text-only",
+      "background_color": "#FF0050",
+      "text_overlay": {
+        "line1": "{roundup_title}",
+        "line2": "Swipe to see all 👉"
+      }
+    },
+    {
+      "index": "2-N",
+      "role": "product-pair",
+      "note": "Repeating block: one model shot per product with price overlay",
+      "generation": "comfyui",
+      "prompt_template": "{model_base_prompt}, wearing/using {product_description}, lifestyle setting, photorealistic, 9:16 vertical",
+      "use_product_reference": true,
+      "reference_strength": 0.70,
+      "text_overlay": {
+        "position": "bottom",
+        "line1": "{product_title}",
+        "line2": "${price_usd}"
+      }
+    },
+    {
+      "index": "last",
+      "role": "cta",
+      "generation": "text-only",
+      "background_color": "#FF0050",
+      "text_overlay": {
+        "line1": "All links in bio 👇",
+        "line2": "Follow for daily finds!"
+      }
+    }
+  ]
+}

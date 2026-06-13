@@ -1,0 +1,114 @@
+{
+  "models": [
+    {
+      "id": "model-f-white-blonde",
+      "gender": "female",
+      "style": "beach-athletic",
+      "description": "Athletic white woman, blonde, classic beach look",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young white woman, athletic toned figure, long golden blonde hair, bright blue eyes, sun-kissed tan skin, high cheekbones, natural makeup, radiant smile",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, disfigured, no face, headless, cut off head, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-white-brunette",
+      "gender": "female",
+      "style": "editorial-fashion",
+      "description": "White woman, dark brunette hair, editorial look",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young white woman, slim figure, long dark brunette hair, green eyes, defined jawline, elegant features, soft natural makeup, confident smile",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-latina",
+      "gender": "female",
+      "style": "lifestyle-casual",
+      "description": "Latina woman, warm olive skin, voluptuous figure",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young Latina woman, curvaceous figure, warm olive skin, long wavy dark brown hair, dark brown eyes, full lips, high cheekbones, bright warm smile",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-black-woman",
+      "gender": "female",
+      "style": "beach-athletic",
+      "description": "Black woman, athletic build, stunning features",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young Black woman, athletic toned figure, deep brown skin, natural coily hair or box braids, striking dark eyes, full lips, strong bone structure, radiant smile, glowing skin",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-asian",
+      "gender": "female",
+      "style": "editorial-fashion",
+      "description": "East Asian woman, elegant features, fashion-forward",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young East Asian woman, slim elegant figure, long straight black hair, almond-shaped dark eyes, flawless porcelain skin, delicate features, graceful smile",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-redhead",
+      "gender": "female",
+      "style": "lifestyle-casual",
+      "description": "White woman, fiery red hair, approachable look",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "beautiful young white woman, slim figure, long wavy red hair, green eyes, light freckles, fair skin, warm friendly smile, approachable and natural look",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-avg-white",
+      "gender": "female",
+      "style": "average-size",
+      "description": "Average-size white woman, relatable and beautiful",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "attractive woman, average body size, naturally proportioned figure, shoulder-length brown hair, warm brown eyes, friendly smile, natural beauty, relatable everyday look",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads, skinny, stick thin, model thin",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-avg-latina",
+      "gender": "female",
+      "style": "average-size",
+      "description": "Average-size Latina, warm and relatable",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "attractive Latina woman, average curvy figure, natural proportions, dark shoulder-length hair, warm brown eyes, golden brown skin, warm genuine smile, relatable everyday beauty",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads, skinny, stick thin",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-avg-black",
+      "gender": "female",
+      "style": "average-size",
+      "description": "Average-size Black woman, natural and beautiful",
+      "lora": null,
+      "lora_weight": 0.85,
+      "base_prompt": "attractive Black woman, average naturally curvy figure, medium brown skin, shoulder-length natural hair, warm brown eyes, full lips, genuine beautiful smile, relatable natural beauty",
+      "negative_prompt": "ugly, deformed, blurry, watermark, text, cartoon, unrealistic, duplicate body, extra limbs, two people, cloned, tiling, bad anatomy, no face, headless, missing face, extra heads, skinny, stick thin",
+      "suitable_niches": ["womens-fashion", "womens-swimwear", "beauty-tools"]
+    },
+    {
+      "id": "model-f-home-cook",
+      "gender": "female",
+      "style": "home-cook",
+      "description": "Home cook, warm kitchen setting, relatable",
+      "lora": null,
+      "lora_weight": 0.75,
+      "base_prompt": "attractive woman, warm smile, light brown hair, hazel eyes, approachable and friendly expression, natural look",
+      "negative_prompt": "ugly, deformed, blurry, watermark, cartoon, duplicate body, extra limbs, two people, tiling, bad anatomy, no face, headless",
+      "suitable_niches": ["kitchen-gadgets"]
+    }
+  ]
+}
